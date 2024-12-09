@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JETA-MLD-CBT - Learn Without Limits</title>
+    <link rel="stylesheet" href="./sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </head>
+  <body>
+    <div class="dashboard">
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+          <div class="logo">
+            <img src="./jeta-logo-dark.png" alt="LUTH Logo">
+            <button class="close-sidebar" id="closeSidebar">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+
+          <!-- Manage Exam Category -->
+          <div class="nav-category">
+            <div class="nav-category-header">
+              <i class="fas fa-graduation-cap"></i>
+              Manage Exam
+              <i class="fas fa-chevron-down toggle-icon"></i>
+            </div>
+            <ul class="nav-links">
+              <li class="active"><i class="fas fa-book"></i> Subject Setup</li>
+              <li><i class="fas fa-list-ul"></i> Topic Setup</li>
+              <li><i class="fas fa-school"></i> Academic Class Setup</li>
+              <li><i class="fas fa-tags"></i> Exam Category Setup</li>
+              <li><i class="fas fa-file-alt"></i> Exam Setup</li>
+              <li><i class="fas fa-calendar-alt"></i> Schedule Exam</li>
+              <li><i class="fas fa-question-circle"></i> Add Question by Exam</li>
+              <li><i class="fas fa-file-upload"></i> Upload Bulk Questions</li>
+              <li><i class="fas fa-database"></i> View Question Bank</li>
+            </ul>
+          </div>
+
+          <!-- Write Exam Category -->
+          <div class="nav-category">
+            <div class="nav-category-header">
+              <i class="fas fa-pen"></i>
+              Write Exam
+              <i class="fas fa-chevron-down toggle-icon"></i>
+            </div>
+            <ul class="nav-links">
+              <li><i class="fas fa-play-circle"></i> Start Exam</li>
+              <li><i class="fas fa-chalkboard-teacher"></i> Practice Exam</li>
+            </ul>
+          </div>
+
+        
+
+          <!-- Administration Category -->
+          <div class="nav-category">
+            <div class="nav-category-header">
+              <i class="fas fa-cogs"></i>
+              Administration
+              <i class="fas fa-chevron-down toggle-icon"></i>
+            </div>
+            <ul class="nav-links">
+              <li><i class="fas fa-file-invoice-dollar"></i> Billing</li>
+              <li><i class="fas fa-user-shield"></i> Staff Management</li>
+              <li><i class="fas fa-cog"></i> Settings</li>
+            </ul>
+          </div>
+
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <div class="header">
+          <button class="toggle-sidebar" id="toggleSidebar">
+            <i class="fas fa-bars"></i>
+          </button>
+          <!-- <h1>Dashboard</h1>
+          <button class="book-appointment">Book An Appointment</button> -->
+        </div>
+
+        <div class="info-cards">
+          <div class="card total-user">
+            <div class="card-txt">
+                <h3>Total Users</h3>
+                <p>500</p>
+            </div>
+           
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="card total-test">
+            <div class="card-txt">
+                <h3>Total Tests</h3>
+                <p>100</p>
+            </div>
+            <i class="fas fa-clipboard-check"></i>
+          </div>
+          <div class="card total-user">
+            <div class="card-txt">
+                <h3>Average Score</h3>
+                <p>95%</p>
+            </div>
+            <i class="fas fa-poll"></i>
+          </div>
+
+          <div class="card total-test">
+            <div class="card-txt">
+                <h3>Sales Revenue</h3>
+                <p>#53,809,230</p>
+            </div>
+            <i class="fas fa-dollar-sign"></i>
+            
+          </div>
+        </div>
+
+        <div class="buttons">
+            <button class="btn-btn">New Tests</button>
+            <button class="btn-btn">Manage Users</button>
+            <button class="btn-btn">Generate Reports</button>
+        </div>
+
+        <div class="students-stats">
+          <div class="stat-card active-student">
+            <h3>Active Student</h3>
+            <div class="stat-number">64</div>
+          </div>
+          <div class="stat-card certified-student">
+            <h3>Certified Student</h3>
+            <div class="stat-number">122</div>
+          </div>
+          <div class="stat-card rejected-appointments">
+            <!-- <h3>Rejected Appointment</h3> -->
+            <div class="stat-number">0</div>
+          </div>
+        </div>
+        
+      </main>
+    </div>
+    <script src="./sidebar.js"></script>
+  </body>
+</html>

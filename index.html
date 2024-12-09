@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JETA-MLD-CBT - Learn Without Limits</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/lucide-static/font/lucide.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com">
+    </script>  
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+
+            <nav class="p-4 ">
+                <div class="container mx-auto flex justify-between items-center">
+                    <div class="logo">
+                        <a href="index.html">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1276 912"><path d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5l0-377.4c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32C93.5 32 46.3 45.3 18.1 56.1C6.8 60.5 0 71.7 0 83.8L0 454.1c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5zm76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6c11.3 3.8 24.1-4.6 24.1-16.5l0-370.3c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6c-3.3 2.6-5 6.8-5 11L304 456c0 11.4 11.7 19.3 22.4 15.5z"/></svg> -->
+                        <span>JETA-MLD-CBT</span>
+                        <!-- <img src="./jeta-logo.png" alt="" width="100" srcset=""> -->
+                    </a>
+                    </div>
+                    <div class="hidden md:flex space-x-4 nav-links">
+
+                    
+                        <a class="text-gray-800 hover:text-white" href="#courses">
+                            Courses
+                        </a>
+                        <a class="text-gray-800 hover:text-white" href="#about">
+                            About
+                        </a>
+                      
+                        <button class="login-btn">
+                            <i class="lucide-user"></i>
+                            <span>Login</span>
+                        </button>
+                    </div>
+                    <div class="md:hidden">
+                        <button class="text-gray-300 hover:text-white focus:outline-none" id="menu-btn">
+                            <i class="fas fa-bars">
+                            </i>
+                        </button>
+                    </div>
+                </div>
+                <div class="hidden md:hidden" id="mobile-menu">
+                 
+                   
+                    <a href="#courses" class="block text-gray-800 hover:text-white px-2 py-1" >Courses</a>
+                    <a href="#about" class="block text-gray-800 hover:text-white px-2 py-1" >About</a>
+                    <button class="login-btn">
+                        <i class="lucide-user"></i>
+                        <span>Login</span>
+                    </button>
+                </div>
+            </nav>
+            
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <i class="lucide-graduation-cap hero-icon"></i>
+                <h1 style="font-weight:600;">Learn Without Limits</h1>
+                <p>Access world-class education with our comprehensive online learning platform. Start your journey to
+                    success today.</p>
+                <button class="cta-btn">Get Started</button>
+            </div>
+        </section>
+
+
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-header">
+                    <h2 style="font-weight: bold; font-style:italic; margin-bottom: 10px; font-size:20px;">About JETA-MLD-CBT</h2>
+                    <p>We are dedicated to revolutionizing education through technology, making quality learning
+                        accessible to all students across Nigeria.</p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655" alt="Students learning">
+                    </div>
+
+                    <div class="about-text">
+                        <div class="mission">
+                            <h3 style="font-weight: bold; font-style:italic; margin-bottom: 10px; font-size:20px;"><i class="lucide-target"></i>Our Mission</h3>
+                            <p>To provide comprehensive, accessible, and quality education preparation for students
+                                across all levels through our innovative CBT platform.</p>
+                        </div>
+
+                        <div class="offerings">
+                            <h3><i class="lucide-book-open"></i>What We Offer</h3>
+                            <ul>
+                                <li><i class="lucide-check-circle"></i>Primary School Examination Preparation</li>
+                                <li><i class="lucide-check-circle"></i>Secondary School (JSS & SSS) Practice Tests</li>
+                                <li><i class="lucide-check-circle"></i>WAEC & NECO Examination Practice</li>
+                                <li><i class="lucide-check-circle"></i>Common Entrance Examination Preparation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="exam-categories">
+            <div class="container">
+                <h2 style="font-weight: bold; font-style:italic; margin-bottom: 20px; font-size:20px;">Our Examination Categories</h2>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <i class="lucide-school"></i>
+                        <h3 style="font-weight: bold; font-style:italic;">Primary School</h3>
+                        <p>Comprehensive practice tests for primary school subjects including Mathematics, English, and
+                            Basic Science.</p>
+                        <ul>
+                            <li>Common Entrance Preparation</li>
+                            <li>Basic Mathematics</li>
+                            <li>English Language</li>
+                            <li>Basic Science</li>
+                        </ul>
+                    </div>
+                    <div class="category-card">
+                        <i class="lucide-book-open"></i>
+                        <h3 style="font-weight: bold; font-style:italic;">Secondary School</h3>
+                        <p>Complete coverage of JSS and SSS subjects with practice tests and study materials.</p>
+                        <ul>
+                            <li>JSS 1-3 Subjects</li>
+                            <li>SSS 1-3 Subjects</li>
+                            <li>Mock Exams</li>
+                            <li>Topic-wise Practice</li>
+                        </ul>
+                    </div>
+                    <div class="category-card">
+                        <i class="lucide-award"></i>
+                        <h3 style="font-weight: bold; font-style:italic;">WAEC/NECO</h3>
+                        <p>Comprehensive preparation for WAEC and NECO examinations across all subjects.</p>
+                        <ul>
+                            <li>Past Questions</li>
+                            <li>Subject Summaries</li>
+                            <li>Mock Tests</li>
+                            <li>Performance Analytics</li>
+                        </ul>
+                    </div>
+                    <div class="category-card">
+                        <i class="lucide-brain"></i>
+                        <h3 style="font-weight: bold; font-style:italic;">Common Entrance</h3>
+                        <p>Specialized preparation for Common Entrance examinations.</p>
+                        <ul>
+                            <li>Practice Questions</li>
+                            <li>Mock Tests</li>
+                            <li>Study Materials</li>
+                            <li>Performance Tracking</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-courses">
+            <div class="container">
+                <h2 style="font-weight: bold; font-style:italic; margin-bottom: 20px; font-size:20px;">Featured Courses</h2>
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb"
+                            alt="WAEC/NECO Mathematics">
+                        <div class="course-content">
+                            <h3>WAEC/NECO Mathematics</h3>
+                            <p>Comprehensive Mathematics preparation for WAEC and NECO examinations with practice
+                                questions and solutions.</p>
+                            <div class="course-meta">
+                                <div class="duration">
+                                    <i class="lucide-clock"></i>
+                                    <!-- <span>12 weeks</span> -->
+                                </div>
+                                <div class="students">
+                                    <i class="lucide-users"></i>
+                                    <span>2500 students</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b"
+                            alt="Common Entrance Preparation">
+                        <div class="course-content">
+                            <h3>Common Entrance Preparation</h3>
+                            <p>Complete preparation package for Common Entrance examinations covering all subjects.</p>
+                            <div class="course-meta">
+                                <div class="duration">
+                                    <i class="lucide-clock"></i>
+                                    <!-- <span>8 weeks</span> -->
+                                </div>
+                                <div class="students">
+                                    <i class="lucide-users"></i>
+                                    <span>1856 students</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290"
+                            alt="Primary 6 Complete Package">
+                        <div class="course-content">
+                            <h3>Primary 6 Complete Package</h3>
+                            <p>Comprehensive study materials and practice tests for Primary 6 students.</p>
+                            <div class="course-meta">
+                                <div class="duration">
+                                    <i class="lucide-clock"></i>
+                                    <!-- <span>16 weeks</span> -->
+                                </div>
+                                <div class="students">
+                                    <i class="lucide-users"></i>
+                                    <span>1678 students</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <i class="lucide-calendar"></i>
+                        <div class="stat-number">1</div>
+                        <div class="stat-label">Years In Existence</div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="lucide-users"></i>
+                        <div class="stat-number">7</div>
+                        <div class="stat-label">JETA Team</div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="lucide-graduation-cap"></i>
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label"> Registered Students</div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="lucide-award"></i>
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Success Rate</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="lucide-book-open"></i>
+                        <span>JETA-MLD-CBT</span>
+                    </div>
+                    <p>Empowering learners worldwide with quality education and innovative learning solutions.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="lucide-mail"></i>jetacomms@gmail.com</li>
+                        <li><i class="lucide-phone"></i>+234 817 107 4476</li>
+                        <li><i class="lucide-phone"></i>+234 803 519 6916</li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get updates on new courses and features.</p>
+                    <div class="newsletter-form">
+                        <input type="email" disabled placeholder="Enter your email">
+                        <button style="cursor: not-allowed;">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+             const mobileMenu = document.getElementById('mobile-menu');
+     
+             menuBtn.addEventListener('click', () => {
+                 mobileMenu.classList.toggle('hidden');
+             });
+       </script>
+  
+</body>
+
+</html>
