@@ -10,7 +10,6 @@
 
   <!-- Favicons -->
   <link href="jeta-logo-dark.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -34,16 +33,19 @@
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-      
-        <h1 class="sitename">JETA-MLD-CBT</h1>
-      </a>
+      <a href="index.html" class="logo d-flex  me-auto">
+        <div class="logoIcon">
+            <img src="./assets/img/jeta-logo-dark.png" alt="" class="logo-img">
+            <img src="./assets/img/mldng.png" alt="" class="logo-img" width="150px">
+        </div>
+        <h1>Computer Base Testing Platform</h1>
+    </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html" class="active">Home<br></a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="">Categories</a></li>
+          <li><a href="#examCategories">Exam Categories</a></li>
 
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -67,9 +69,9 @@
 
           <div class="container">
             <h2 data-aos="fade-up" data-aos-delay="100">Learning Today,<br>Leading Tomorrow</h2>
-            <p data-aos="fade-up" data-aos-delay="200">Access world-class education with our comprehensive online learning platform. Start your journey to success today.</p>
+            <p data-aos="fade-up" data-aos-delay="200">Access world-class Computer base test (CBT) and preparation for differnt exam categories comprehensive online learning platform. Start your journey to success today.</p>
             <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-              <a href="courses.html" class="btn-get-started">Get Started</a>
+              <a href="" class="btn-get-started">Get Started</a>
             </div>
           </div>
         </div>
@@ -94,10 +96,10 @@
           <div class="col-lg-6 order-2 order-lg-1 content" id="about" data-aos="fade-up" data-aos-delay="200">
             <h3 id="about"> About JETA-MLD-CBT</h3>
             <p class="fst-italic">
-              We are dedicated to revolutionizing education through technology, making quality learning accessible to all students across Nigeria.
+              We are dedicated to revolutionizing education through technology, making quality learning accessible to all students.
             </p>
             <p class="fst-italic">
-              <h2> <b>Our Mission</b></h2>To provide comprehensive, accessible, and quality education preparation for students across all levels through our innovative CBT platform are dedicated to revolutionizing education through technology, making quality learning accessible to all students across Nigeria.
+              <h2> <b>Our Mission</b></h2>To provide comprehensive, accessible, and quality education preparation for students across all levels through our innovative CBT platform.
             </p>
             <ul>
               <li><i class="bi bi-check-circle"></i> <span>Primary School Examination Preparation.<span></li>
@@ -130,8 +132,8 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" class="purecounter"></span>
-              <p>JETA Team</p>
+              <span data-purecounter-start="0" data-purecounter-end="21" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Total Subject</p>
             </div>
           </div><!-- End Stats Item -->
 
@@ -144,8 +146,8 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="95" data-purecounter-duration="1" class="purecounter">%</span>
-              <p>Success Rate</p>
+              <span data-purecounter-start="0" data-purecounter-end="495" data-purecounter-duration="1" class="purecounter">%</span>
+              <p>Questions</p>
             </div>
           </div><!-- End Stats Item -->
 
@@ -160,14 +162,13 @@
 
       <div class="container">
 
-        <div class="row gy-4">
+        <div class="row gy-4" id="examCategories">
+          <h3>Our Examination Categories</h3>
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <!-- <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="why-box">
-              <h3>Our Examination Categories</h3>
               <p>
                 <div class="category-card">
-                  <i class="lucide-school"></i>
                   <h5 style="font-weight: bold; font-style:italic;">Primary School</h5>
                   <p>Comprehensive practice tests for primary school subjects including Mathematics, English, and
                       Basic Science.</p>
@@ -181,14 +182,33 @@
             </p>
              
             </div>
-          </div>
+          </div> -->
 
-          <div class="col-lg-8 d-flex align-items-stretch">
+          <!-- <div class="col-lg-8 d-flex align-items-stretch"> -->
             <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
 
               <div class="col-xl-6">
+                <div class="icon-box d-flex flex-column justify-content-center " style="background: #15803d; color: #fff;">
+                  <i style="color: white;" class="bi bi-book"></i>
+                  <div class="category-card">
+                    <h4 style="font-weight: bold; font-style:italic;">Primary School</h4>
+                    <p style="color: #fff;">Comprehensive practice tests for primary school subjects including Mathematics, English, and
+                      Basic Science.</p>
+                    <ul>
+                      <li>Common Entrance Preparation</li>
+                      <li>Basic Mathematics</li>
+                      <li>English Language</li>
+                      <li>Basic Science</li>
+                      <li>Computer Studies and others</li>
+                  </ul>
+                </div>
+                </div>
+              </div>
+
+
+              <div class="col-xl-6">
                 <div class="icon-box d-flex flex-column justify-content-center ">
-                  <i class="bi bi-gem"></i>
+                  <i class="bi bi-book"></i>
                   <div class="category-card">
                     <h4 style="font-weight: bold; font-style:italic;">Secondary School</h4>
                     <p>Complete coverage of JSS and SSS subjects with practice tests and study materials.</p>
@@ -202,25 +222,9 @@
                 </div>
               </div><!-- End Icon Box -->
 
-              <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="icon-box d-flex flex-column justify-content-center ">
-                  <i class="bi bi-gem"></i>
-                  <div class="category-card">
-                    <h4 style="font-weight: bold; font-style:italic;">WAEC/NECO</h4>
-                    <p>Comprehensive preparation for WAEC and NECO examinations across all subjects.</p>
-                    <ul>
-                        <li>Past Questions</li>
-                        <li>Subject Summaries</li>
-                        <li>Mock Tests</li>
-                        <li>Performance Analytics</li>
-                    </ul>
-                </div>
-                </div>
-              </div><!-- End Icon Box -->
-
               <div class="col-xl-6" data-aos="fade-up" data-aos-delay="400">
                 <div class="icon-box d-flex flex-column justify-content-center">
-                  <i class="bi bi-inboxes"></i>
+                  <i class="bi bi-pencil"></i>
                   <div class="category-card">
                     <h3 style="font-weight: bold; font-style:italic;">Common Entrance</h3>
                     <p>Specialized preparation for Common Entrance examinations.</p>
@@ -234,17 +238,26 @@
                 </div>
               </div><!-- End Icon Box -->
 
-
-              <!-- <div class="col-xl-6" data-aos="fade-up" data-aos-delay="400">
-                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-inboxes"></i>
-                  <h4>Labore consequatur incidid dolore</h4>
-                  <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+              <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box d-flex flex-column justify-content-center " style="background: #15803d; color: #fff;">
+                  <i style="color: white;" class="bi bi-pencil"></i>
+                  <div class="category-card">
+                    <h4 style="font-weight: bold; font-style:italic;">WAEC/NECO</h4>
+                    <p style="color: #fff;">Comprehensive preparation for WAEC and NECO examinations across all subjects.</p>
+                    <ul>
+                        <li>Past Questions</li>
+                        <li>Subject Summaries</li>
+                        <li>Mock Tests</li>
+                        <li>Performance Analytics</li>
+                    </ul>
                 </div>
-              </div> -->
+                </div>
+              </div><!-- End Icon Box -->
+
+             
 
             </div>
-          </div>
+          <!-- </div> -->
 
         </div>
 
@@ -256,7 +269,7 @@
 
   </main>
 
-  <footer id="footer" class="footer position-relative light-background">
+  <footer id="footer" class="footer position-relative ">
 
     <div class="container footer-top">
       <div class="row gy-4">
@@ -282,8 +295,8 @@
           <h4>Useful Links</h4>
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Courses</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#examCategories">Exam Categories</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">FAQ</a></li>
           </ul>
@@ -302,7 +315,7 @@
         <div class="col-lg-4 col-md-12 footer-newsletter">
           <h4>Our Newsletter</h4>
           <p>Subscribe to our newsletter and receive the latest news about our courses and features!</p>
-          <form action="forms/newsletter.php" method="post" >
+          <form action="" method="post" >
             <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
             
           </form>

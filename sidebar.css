@@ -18,7 +18,7 @@
   }
   
   body {
-    background-color: var(--light-bg);
+    background-color: #b0b0b0;
     overflow: hidden;
   }
   
@@ -30,7 +30,7 @@
   /* Sidebar Styles */
   .sidebar {
     width: 250px;
-    background-color: var(--light-bg);
+    background-color: #fff;
     color: var(--text-color);
     position: relative;
     transition: transform 0.3s ease-in-out;
@@ -71,13 +71,13 @@
     margin-bottom: 30px;
     position: sticky;
     top: -10px;
-    background-color: var(--light-bg);
+    background-color: #fff;
     z-index: 2;
   }
   
   .logo img {
-    width: 200px;
-    height: 70px;
+    width: 80px;
+    height: auto;
   }
   
   .close-sidebar {
@@ -176,6 +176,8 @@
     padding: 20px;
     overflow-y: auto;
     height: 100vh;
+    background: var(--light-bg);
+    margin-left: 10px;
   }
   
   .buttons {
