@@ -2,311 +2,341 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JETA-MLD-CBT - Learn Without Limits</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://unpkg.com/lucide-static/font/lucide.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
-    <script src="https://cdn.tailwindcss.com">
-    </script>  
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>JETA-MLD-CBT - Learn Without Limits</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="jeta-logo-dark.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> 
 </head>
 
-<body>
-    <header class="header">
-        <div class="container">
+<body class="index-page">
 
-            <nav class="p-4 ">
-                <div class="container mx-auto flex justify-between items-center">
-                    <div class="logo">
-                        <a href="index.html">
-                        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1276 912"><path d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5l0-377.4c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32C93.5 32 46.3 45.3 18.1 56.1C6.8 60.5 0 71.7 0 83.8L0 454.1c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5zm76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6c11.3 3.8 24.1-4.6 24.1-16.5l0-370.3c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6c-3.3 2.6-5 6.8-5 11L304 456c0 11.4 11.7 19.3 22.4 15.5z"/></svg> -->
-                        <span>JETA-MLD-CBT</span>
-                        <!-- <img src="./jeta-logo.png" alt="" width="100" srcset=""> -->
-                    </a>
-                    </div>
-                    <div class="hidden md:flex space-x-4 nav-links">
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-                    
-                        <a class="text-gray-800 hover:text-white" href="#courses">
-                            Courses
-                        </a>
-                        <a class="text-gray-800 hover:text-white" href="#about">
-                            About
-                        </a>
-                      
-                        <button class="login-btn">
-                            <i class="lucide-user"></i>
-                            <span>Login</span>
-                        </button>
-                    </div>
-                    <div class="md:hidden">
-                        <button class="text-gray-300 hover:text-white focus:outline-none" id="menu-btn">
-                            <i class="fas fa-bars">
-                            </i>
-                        </button>
-                    </div>
-                </div>
-                <div class="hidden md:hidden" id="mobile-menu">
-                 
-                   
-                    <a href="#courses" class="block text-gray-800 hover:text-white px-2 py-1" >Courses</a>
-                    <a href="#about" class="block text-gray-800 hover:text-white px-2 py-1" >About</a>
-                    <button class="login-btn">
-                        <i class="lucide-user"></i>
-                        <span>Login</span>
-                    </button>
-                </div>
-            </nav>
-            
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+      
+        <h1 class="sitename">JETA-MLD-CBT</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home<br></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="">Categories</a></li>
+
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div class="slide-homepage">
+
+        
+        <div class="slide">
+          <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+
+          <div class="container">
+            <h2 data-aos="fade-up" data-aos-delay="100">Learning Today,<br>Leading Tomorrow</h2>
+            <p data-aos="fade-up" data-aos-delay="200">Access world-class education with our comprehensive online learning platform. Start your journey to success today.</p>
+            <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+              <a href="courses.html" class="btn-get-started">Get Started</a>
+            </div>
+          </div>
         </div>
-    </header>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <i class="lucide-graduation-cap hero-icon"></i>
-                <h1 style="font-weight:600;">Learn Without Limits</h1>
-                <p>Access world-class education with our comprehensive online learning platform. Start your journey to
-                    success today.</p>
-                <button class="cta-btn">Get Started</button>
-            </div>
-        </section>
+      </div>
 
-
-
-        <section id="about" class="about">
-            <div class="container">
-                <div class="about-header">
-                    <h2 style="font-weight: bold; font-style:italic; margin-bottom: 10px; font-size:20px;">About JETA-MLD-CBT</h2>
-                    <p>We are dedicated to revolutionizing education through technology, making quality learning
-                        accessible to all students across Nigeria.</p>
-                </div>
-
-                <div class="about-content">
-                    <div class="about-image">
-                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655" alt="Students learning">
-                    </div>
-
-                    <div class="about-text">
-                        <div class="mission">
-                            <h3 style="font-weight: bold; font-style:italic; margin-bottom: 10px; font-size:20px;"><i class="lucide-target"></i>Our Mission</h3>
-                            <p>To provide comprehensive, accessible, and quality education preparation for students
-                                across all levels through our innovative CBT platform.</p>
-                        </div>
-
-                        <div class="offerings">
-                            <h3><i class="lucide-book-open"></i>What We Offer</h3>
-                            <ul>
-                                <li><i class="lucide-check-circle"></i>Primary School Examination Preparation</li>
-                                <li><i class="lucide-check-circle"></i>Secondary School (JSS & SSS) Practice Tests</li>
-                                <li><i class="lucide-check-circle"></i>WAEC & NECO Examination Practice</li>
-                                <li><i class="lucide-check-circle"></i>Common Entrance Examination Preparation</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="exam-categories">
-            <div class="container">
-                <h2 style="font-weight: bold; font-style:italic; margin-bottom: 20px; font-size:20px;">Our Examination Categories</h2>
-                <div class="categories-grid">
-                    <div class="category-card">
-                        <i class="lucide-school"></i>
-                        <h3 style="font-weight: bold; font-style:italic;">Primary School</h3>
-                        <p>Comprehensive practice tests for primary school subjects including Mathematics, English, and
-                            Basic Science.</p>
-                        <ul>
-                            <li>Common Entrance Preparation</li>
-                            <li>Basic Mathematics</li>
-                            <li>English Language</li>
-                            <li>Basic Science</li>
-                        </ul>
-                    </div>
-                    <div class="category-card">
-                        <i class="lucide-book-open"></i>
-                        <h3 style="font-weight: bold; font-style:italic;">Secondary School</h3>
-                        <p>Complete coverage of JSS and SSS subjects with practice tests and study materials.</p>
-                        <ul>
-                            <li>JSS 1-3 Subjects</li>
-                            <li>SSS 1-3 Subjects</li>
-                            <li>Mock Exams</li>
-                            <li>Topic-wise Practice</li>
-                        </ul>
-                    </div>
-                    <div class="category-card">
-                        <i class="lucide-award"></i>
-                        <h3 style="font-weight: bold; font-style:italic;">WAEC/NECO</h3>
-                        <p>Comprehensive preparation for WAEC and NECO examinations across all subjects.</p>
-                        <ul>
-                            <li>Past Questions</li>
-                            <li>Subject Summaries</li>
-                            <li>Mock Tests</li>
-                            <li>Performance Analytics</li>
-                        </ul>
-                    </div>
-                    <div class="category-card">
-                        <i class="lucide-brain"></i>
-                        <h3 style="font-weight: bold; font-style:italic;">Common Entrance</h3>
-                        <p>Specialized preparation for Common Entrance examinations.</p>
-                        <ul>
-                            <li>Practice Questions</li>
-                            <li>Mock Tests</li>
-                            <li>Study Materials</li>
-                            <li>Performance Tracking</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="featured-courses">
-            <div class="container">
-                <h2 style="font-weight: bold; font-style:italic; margin-bottom: 20px; font-size:20px;">Featured Courses</h2>
-                <div class="courses-grid">
-                    <div class="course-card">
-                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb"
-                            alt="WAEC/NECO Mathematics">
-                        <div class="course-content">
-                            <h3>WAEC/NECO Mathematics</h3>
-                            <p>Comprehensive Mathematics preparation for WAEC and NECO examinations with practice
-                                questions and solutions.</p>
-                            <div class="course-meta">
-                                <div class="duration">
-                                    <i class="lucide-clock"></i>
-                                    <!-- <span>12 weeks</span> -->
-                                </div>
-                                <div class="students">
-                                    <i class="lucide-users"></i>
-                                    <span>2500 students</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="course-card">
-                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b"
-                            alt="Common Entrance Preparation">
-                        <div class="course-content">
-                            <h3>Common Entrance Preparation</h3>
-                            <p>Complete preparation package for Common Entrance examinations covering all subjects.</p>
-                            <div class="course-meta">
-                                <div class="duration">
-                                    <i class="lucide-clock"></i>
-                                    <!-- <span>8 weeks</span> -->
-                                </div>
-                                <div class="students">
-                                    <i class="lucide-users"></i>
-                                    <span>1856 students</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="course-card">
-                        <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290"
-                            alt="Primary 6 Complete Package">
-                        <div class="course-content">
-                            <h3>Primary 6 Complete Package</h3>
-                            <p>Comprehensive study materials and practice tests for Primary 6 students.</p>
-                            <div class="course-meta">
-                                <div class="duration">
-                                    <i class="lucide-clock"></i>
-                                    <!-- <span>16 weeks</span> -->
-                                </div>
-                                <div class="students">
-                                    <i class="lucide-users"></i>
-                                    <span>1678 students</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="stats">
-            <div class="container">
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <i class="lucide-calendar"></i>
-                        <div class="stat-number">1</div>
-                        <div class="stat-label">Years In Existence</div>
-                    </div>
-                    <div class="stat-item">
-                        <i class="lucide-users"></i>
-                        <div class="stat-number">7</div>
-                        <div class="stat-label">JETA Team</div>
-                    </div>
-                    <div class="stat-item">
-                        <i class="lucide-graduation-cap"></i>
-                        <div class="stat-number">50+</div>
-                        <div class="stat-label"> Registered Students</div>
-                    </div>
-                    <div class="stat-item">
-                        <i class="lucide-award"></i>
-                        <div class="stat-number">95%</div>
-                        <div class="stat-label">Success Rate</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <div class="logo">
-                        <i class="lucide-book-open"></i>
-                        <span>JETA-MLD-CBT</span>
-                    </div>
-                    <p>Empowering learners worldwide with quality education and innovative learning solutions.</p>
-                </div>
-
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#courses">Courses</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-contact">
-                    <h3>Contact Us</h3>
-                    <ul>
-                        <li><i class="lucide-mail"></i>jetacomms@gmail.com</li>
-                        <li><i class="lucide-phone"></i>+234 817 107 4476</li>
-                        <li><i class="lucide-phone"></i>+234 803 519 6916</li>
-                    </ul>
-                </div>
-
-                <div class="footer-newsletter">
-                    <h3>Newsletter</h3>
-                    <p>Subscribe to get updates on new courses and features.</p>
-                    <div class="newsletter-form">
-                        <input type="email" disabled placeholder="Enter your email">
-                        <button style="cursor: not-allowed;">Subscribe</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        const menuBtn = document.getElementById('menu-btn');
-             const mobileMenu = document.getElementById('mobile-menu');
      
-             menuBtn.addEventListener('click', () => {
-                 mobileMenu.classList.toggle('hidden');
-             });
-       </script>
-  
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 order-2 order-lg-1 content" id="about" data-aos="fade-up" data-aos-delay="200">
+            <h3 id="about"> About JETA-MLD-CBT</h3>
+            <p class="fst-italic">
+              We are dedicated to revolutionizing education through technology, making quality learning accessible to all students across Nigeria.
+            </p>
+            <p class="fst-italic">
+              <h2> <b>Our Mission</b></h2>To provide comprehensive, accessible, and quality education preparation for students across all levels through our innovative CBT platform are dedicated to revolutionizing education through technology, making quality learning accessible to all students across Nigeria.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Primary School Examination Preparation.<span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Secondary School (JSS & SSS) Practice Tests.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>WAEC & NECO Examination Practice.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Common Entrance Examination Preparation.</span></li>
+            </ul>
+            <!-- <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a> -->
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Counts Section -->
+    <section id="counts" class="section counts light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Years In Existence</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" class="purecounter"></span>
+              <p>JETA Team</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Registered Students</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="95" data-purecounter-duration="1" class="purecounter">%</span>
+              <p>Success Rate</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Counts Section -->
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="section why-us">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="why-box">
+              <h3>Our Examination Categories</h3>
+              <p>
+                <div class="category-card">
+                  <i class="lucide-school"></i>
+                  <h5 style="font-weight: bold; font-style:italic;">Primary School</h5>
+                  <p>Comprehensive practice tests for primary school subjects including Mathematics, English, and
+                      Basic Science.</p>
+                  <ul>
+                      <li>Common Entrance Preparation</li>
+                      <li>Basic Mathematics</li>
+                      <li>English Language</li>
+                      <li>Basic Science</li>
+                  </ul>
+              </div>
+            </p>
+             
+            </div>
+          </div>
+
+          <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="col-xl-6">
+                <div class="icon-box d-flex flex-column justify-content-center ">
+                  <i class="bi bi-gem"></i>
+                  <div class="category-card">
+                    <h4 style="font-weight: bold; font-style:italic;">Secondary School</h4>
+                    <p>Complete coverage of JSS and SSS subjects with practice tests and study materials.</p>
+                    <ul>
+                        <li>JSS 1-3 Subjects</li>
+                        <li>SSS 1-3 Subjects</li>
+                        <li>Mock Exams</li>
+                        <li>Topic-wise Practice</li>
+                    </ul>
+                </div>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box d-flex flex-column justify-content-center ">
+                  <i class="bi bi-gem"></i>
+                  <div class="category-card">
+                    <h4 style="font-weight: bold; font-style:italic;">WAEC/NECO</h4>
+                    <p>Comprehensive preparation for WAEC and NECO examinations across all subjects.</p>
+                    <ul>
+                        <li>Past Questions</li>
+                        <li>Subject Summaries</li>
+                        <li>Mock Tests</li>
+                        <li>Performance Analytics</li>
+                    </ul>
+                </div>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-xl-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box d-flex flex-column justify-content-center">
+                  <i class="bi bi-inboxes"></i>
+                  <div class="category-card">
+                    <h3 style="font-weight: bold; font-style:italic;">Common Entrance</h3>
+                    <p>Specialized preparation for Common Entrance examinations.</p>
+                    <ul>
+                        <li>Practice Questions</li>
+                        <li>Mock Tests</li>
+                        <li>Study Materials</li>
+                        <li>Performance Tracking</li>
+                    </ul>
+                </div>
+                </div>
+              </div><!-- End Icon Box -->
+
+
+              <!-- <div class="col-xl-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                  <i class="bi bi-inboxes"></i>
+                  <h4>Labore consequatur incidid dolore</h4>
+                  <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                </div>
+              </div> -->
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Why Us Section -->
+
+
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">JETA-MLD-CBT</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Empowering learners worldwide with quality education and innovative learning solutions.</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+234 817 107 4476 <br>
+              +234 803 519 6916</span></p>
+            <p><strong>Email:</strong> <span>jetacomms@gmail.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Examination Categories</h4>
+          <ul>
+            <li><a href="#">Primary School</a></li>
+            <li><a href="#">Secondary School</a></li>
+            <li><a href="#">WAEC/NECO</a></li>
+            <li><a href="#">Common Entrance</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Subscribe to our newsletter and receive the latest news about our courses and features!</p>
+          <form action="forms/newsletter.php" method="post" >
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">JETA-MLD-CBT</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        Designed by <a href="https://jetacoms.tech/">JETA COMMUNICATIONS</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
