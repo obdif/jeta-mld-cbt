@@ -36,7 +36,7 @@
     transition: transform 0.3s ease-in-out;
     z-index: 1000;
     height: 100vh;
-    box-shadow: 2px 2px 35px var(--text-color);
+    /* box-shadow: 2px 2px 35px var(--text-color); */
   }
   
   .sidebar-content {
