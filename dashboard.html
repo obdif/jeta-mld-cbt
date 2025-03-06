@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JETA-MLD-CBT - Learn Without Limits</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/lucide-static/font/lucide.css" rel="stylesheet">
+    <!-- <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <style>
         .sidebar {
             transition: transform 0.3s ease-in-out;
@@ -56,6 +57,10 @@
         .logout-button:hover {
             background-color: #B91C1C; /* red-700 */
         }
+        /* Ensure Tailwind takes precedence over Bootstrap for dropdown */
+        .dropdown-menu {
+            z-index: 50 !important;
+        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -73,12 +78,12 @@
                 <button class="text-gray-700 hover:text-green-600 px-4 py-2 text-left font-medium">Refer a Friend</button>
             </nav>
             <!-- <div class="mt-4 flex items-center space-x-2 p-4">
-                <i class="lucide-bell h-6 w-6 text-red-500 hover:text-red-600 cursor-pointer" aria-label="Notifications"></i>
+                <i class="bi-bell h-6 w-6 text-red-500 hover:text-red-600 cursor-pointer" aria-label="Notifications"></i>
                 <div class="h-8 w-8 rounded-full bg-red-800"></div>
             </div> -->
             <!-- Logout Button -->
             <button id="sidebarLogout" class="logout-button">
-                <i class="lucide-log-out h-5 w-5 mr-2"></i>
+                <i class="bi-box-arrow-right h-5 w-5 mr-2"></i>
                 Logout
             </button>
         </div>
@@ -91,8 +96,8 @@
             <!-- Top Bar with Toggle for Small Screens -->
             <div class="bg-white shadow-sm p-4 flex justify-between items-center md:hidden sticky top-0 z-30">
                 <button id="toggleSidebar" class="text-green-500 hover:text-green-600 p-2 rounded-md bg-green-50" aria-label="Toggle sidebar">
-                    <p class="w-6 h-0.5 bg-black"></p>
-                    <p class="w-6 h-0.5 bg-black  mt-1"></p>
+                    <p class="w-4 h-0.5 bg-black"></p>
+                    <p class="w-5 h-0.5 bg-black  mt-1"></p>
                     <p class="w-6 h-0.5 bg-black  mt-1"></p>
                 </button>
                 <div class="bg-green-50 text-green-600 px-3 py-1 rounded-md text-sm">
@@ -105,10 +110,10 @@
                 <div class="flex justify-end mb-6 relative">
                     <div class="flex items-center space-x-3 group cursor-pointer" id="profileToggle">
                         <div class="h-8 w-8 rounded-full bg-green-200 flex items-center justify-center">
-                            <span class="text-green-600 font-medium uppercase">AB</span> 
+                            <span class="text-green-600 font-medium uppercase">AB</span>
                         </div>
                         <span class="text-green-900 font-medium capitalize">adekunle Blessing</span>
-                        <i class="lucide-chevron-down h-4 w-4 text-green-600"></i>
+                        <i class="bi-chevron-down h-4 w-4 text-green-600"></i>
                     </div>
                     <!-- Dropdown Menu -->
                     <div id="profileDropdown" class="dropdown-menu absolute top-full right-0 mt-2 w-48 bg-white shadow-lg rounded-md py-2 dropdown-hidden z-50">
@@ -269,10 +274,17 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            console.log('DOM fully loaded'); // Debugging
+
             // Sidebar Toggle
             const toggleSidebar = document.getElementById('toggleSidebar');
             const sidebar = document.getElementById('sidebar');
             const overlay = document.getElementById('overlay');
+
+            if (!toggleSidebar || !sidebar || !overlay) {
+                console.error('Sidebar elements not found');
+                return;
+            }
 
             if (window.innerWidth < 768) {
                 sidebar.classList.add('sidebar-hidden');
@@ -282,6 +294,7 @@
                 e.stopPropagation();
                 sidebar.classList.toggle('sidebar-hidden');
                 overlay.classList.toggle('overlay-hidden');
+                console.log('Sidebar toggled'); // Debugging
             });
 
             document.addEventListener('click', (e) => {
@@ -311,35 +324,45 @@
             const dropdownItems = profileDropdown.querySelectorAll('.dropdown-item');
             const sidebarLogout = document.getElementById('sidebarLogout');
 
+            if (!profileToggle || !profileDropdown || !sidebarLogout) {
+                console.error('Dropdown elements not found');
+                return;
+            }
+
             let isDropdownOpen = false;
 
             profileToggle.addEventListener('click', (e) => {
                 e.stopPropagation();
                 isDropdownOpen = !isDropdownOpen;
                 profileDropdown.classList.toggle('dropdown-hidden', !isDropdownOpen);
+                console.log('Dropdown toggled:', isDropdownOpen); // Debugging
             });
 
             profileToggle.addEventListener('mouseenter', () => {
                 if (window.innerWidth >= 768 && !isDropdownOpen) {
                     profileDropdown.classList.remove('dropdown-hidden');
+                    console.log('Dropdown shown on hover'); // Debugging
                 }
             });
 
             profileToggle.addEventListener('mouseleave', () => {
                 if (window.innerWidth >= 768 && !isDropdownOpen) {
                     profileDropdown.classList.add('dropdown-hidden');
+                    console.log('Dropdown hidden on hover out'); // Debugging
                 }
             });
 
             profileDropdown.addEventListener('mouseenter', () => {
                 if (window.innerWidth >= 768) {
                     profileDropdown.classList.remove('dropdown-hidden');
+                    console.log('Dropdown kept open on hover'); // Debugging
                 }
             });
 
             profileDropdown.addEventListener('mouseleave', () => {
                 if (window.innerWidth >= 768 && !isDropdownOpen) {
                     profileDropdown.classList.add('dropdown-hidden');
+                    console.log('Dropdown hidden on dropdown hover out'); // Debugging
                 }
             });
 
@@ -347,6 +370,7 @@
                 if (!profileToggle.contains(e.target) && !profileDropdown.contains(e.target)) {
                     isDropdownOpen = false;
                     profileDropdown.classList.add('dropdown-hidden');
+                    console.log('Dropdown closed on outside click'); // Debugging
                 }
             });
 
@@ -367,14 +391,13 @@
                     }
                     isDropdownOpen = false;
                     profileDropdown.classList.add('dropdown-hidden');
+                    console.log('Dropdown item clicked:', action); // Debugging
                 });
             });
 
-            // Sidebar Logout Button
             sidebarLogout.addEventListener('click', (e) => {
                 e.stopPropagation();
-                console.log('Logging out from sidebar'); 
-                // Optionally close sidebar on mobile
+                console.log('Logging out from sidebar');
                 if (window.innerWidth < 768) {
                     sidebar.classList.add('sidebar-hidden');
                     overlay.classList.add('overlay-hidden');
